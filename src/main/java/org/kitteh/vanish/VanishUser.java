@@ -54,59 +54,59 @@ public final class VanishUser {
     }
 
     public boolean getEffectBats() {
-        return this.bats;
+        return false;
     }
 
     public boolean getEffectExplode() {
-        return this.explode;
+        return false;
     }
 
     public boolean getEffectFlames() {
-        return this.flames;
+        return false;
     }
 
     public boolean getEffectLightning() {
-        return this.lightning;
+        return false;
     }
 
     public boolean getEffectSmoke() {
-        return this.smoke;
+        return false;
     }
 
     public boolean getNoChat() {
-        return this.noChat;
+        return false;
     }
 
     public boolean getNoFollow() {
-        return this.noFollow;
+        return false;
     }
 
     public boolean getNoHunger() {
-        return this.noHunger;
+        return false;
     }
 
     public boolean getNoInteract() {
-        return this.noInteract;
+        return false;
     }
 
     public boolean getNoPickup() {
-        return this.noPickup;
+        return false;
     }
 
     public boolean getPreventIncomingDamage() {
-        return this.preventIncomingDamage;
+        return false;
     }
 
     public boolean getPreventOutgoingDamage() {
-        return this.preventOutgoingDamage;
+        return false;
     }
 
     public boolean getReadChestsSilently() {
-        return this.silentChestReads;
+        return false;
     }
 
     public boolean getSeeAll() {
-        return this.seeAll;
+        return false;
     }
 
     public boolean toggleEffectBats() {
