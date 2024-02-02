@@ -1,6 +1,6 @@
 /*
  * VanishNoPacket
- * Copyright (C) 2011-2021 Matt Baxter
+ * Copyright (C) 2011-2022 Matt Baxter
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,6 +25,7 @@ import org.kitteh.vanish.VanishPlugin;
 import org.kitteh.vanish.hooks.plugins.DiscordSRVHook;
 import org.kitteh.vanish.hooks.plugins.DynmapHook;
 import org.kitteh.vanish.hooks.plugins.EssentialsHook;
+import org.kitteh.vanish.hooks.plugins.SquaremapHook;
 import org.kitteh.vanish.hooks.plugins.VaultHook;
 
 import java.util.ArrayList;
@@ -37,7 +38,8 @@ public final class HookManager {
         Dynmap(DynmapHook.class),
         Essentials(EssentialsHook.class),
         Vault(VaultHook.class),
-        DiscordSRV(DiscordSRVHook.class);
+        DiscordSRV(DiscordSRVHook.class),
+        squaremap(SquaremapHook.class);
 
         private final Class<? extends Hook> clazz;
 
@@ -80,6 +82,7 @@ public final class HookManager {
      * @param name hook name to deregister
      * @return the deregistered hook or null if no hook by the given name was registered
      */
+    @SuppressWarnings("UnusedReturnValue")
     public @Nullable Hook deregisterHook(@NonNull String name) {
         final Hook ret = this.hooks.get(name);
         this.hooks.remove(name);

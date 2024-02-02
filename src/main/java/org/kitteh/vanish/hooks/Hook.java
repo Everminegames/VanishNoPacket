@@ -1,6 +1,6 @@
 /*
  * VanishNoPacket
- * Copyright (C) 2011-2021 Matt Baxter
+ * Copyright (C) 2011-2022 Matt Baxter
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,6 +21,7 @@ import org.bukkit.entity.Player;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.kitteh.vanish.VanishPlugin;
 
+@SuppressWarnings("EmptyMethod")
 public abstract class Hook {
     protected final VanishPlugin plugin;
 
